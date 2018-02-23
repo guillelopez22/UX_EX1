@@ -4,4 +4,5 @@
 <p class="date">
 	Submitted  <%= time_ago_in_words(@category.created_at) %> Ago
 	| <%= link_to 'Edit', edit_category_path(@category) %>
+	| <%= link_to 'Delete', category_path(@category), method: :delete, data: {confirm: 'Really?'}%>
 </p>
