@@ -3,6 +3,7 @@ class CategoriesController < ApplicationController
   	@category = Category.all.order('created_at DESC')
   end
   def new 
+    @category = Category.new
   end
 
   def create

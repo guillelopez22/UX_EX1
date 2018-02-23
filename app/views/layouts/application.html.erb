@@ -9,6 +9,20 @@
   </head>
 
   <body>
-    <%= yield %>
+  <div id="sidebar">
+  	<ul>
+  		<li class="category">Website</li>
+  		<li><%= link_to "Categories", root_path%></li>
+  		<li>About</li>
+  	</ul>	
+  	<p class="sign_in">Log in</p>
+  </div>
+  <div id="main_content">
+  	<div id="header">
+  		<p>All Posts</p>
+  		<a href="/categories/new"><button class="button">New Category</button></a>
+  	</div>
+  	    <%= yield %>
+  </div>
   </body>
 </html>
