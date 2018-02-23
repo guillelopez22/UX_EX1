@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-	resources :categories
+  get 'todos/create'
+
+  resources :categories do
+  	resources :todos
+  end
   get 'categories/index'
   root 'categories#index'
 

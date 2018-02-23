@@ -1,0 +1,7 @@
+<%= form_for([@category, @category.todos.build]) do |f| %>
+	<p>
+		<%= f.label :description %> <br>
+		<%= f.text_field :level %>
+	</p>
+	<%= f.submit %>
+<% end %>
